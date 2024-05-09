@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Python Compiler</title>
+    <link href="data/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <script src="data/js/ace-builds/src-noconflict/ace.js" type="text/javascript"></script>
+    <script src="data/js/ace-builds/src-noconflict/ext-language_tools.js" type="text/javascript"></script>
+    <script src="data/js/skulpt/skulpt.js" type="text/javascript"></script>
+    <script src="data/js/skulpt/skulpt-stdlib.js" type="text/javascript"></script>
+    <link href="data/css/style.css" rel="stylesheet">
+    <link href="data/fonts/fontawesome-free-6.1.1-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="data/fonts/fontawesome-free-6.1.1-web/css/solid.min.css" rel="stylesheet">
+    <link href="data/fonts/fontawesome-free-6.1.1-web/css/brands.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="header-text-logo"></div>
+        <div class="topnav" id="myTopnav">
+            <div class="topnav-fst">
+                <input type="file" />
+                <a class="open-btn" id="open-btn" onclick="document.querySelector('input').click()"> <i class="ri-folder-open-fill"></i></a>
+                <a class="console-btn" onclick="toggleConsole()"> <i class="ri-terminal-box-fill"></i></a>
+                <!-- <a onclick="saveCode()"> <i class="ri-save-2-fill"></i> Save</a> -->
+                <a class="download-btn" onclick="downloadCode()"> <i class="ri-download-fill"></i></a>
+                <!-- <a onclick="aceSettings()">Settings</a> -->
+                <div>
+                    <a onclick="main()" class="run-btn" style="color: black;"> <i class="ri-play-large-fill"></i></a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="resPanel()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="editor"><pre></pre></div>
+        <div class="output-head" id="output-head"> Output</div>
+        <textarea id="output"></textarea>
+    </div>
+    <script src="data/js/script.js" tpye="text/javascript"></script>
+</body>
+
+</html>
