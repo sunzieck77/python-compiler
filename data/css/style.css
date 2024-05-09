@@ -98,6 +98,20 @@ body {
     user-select: none;
 }
 
+.close-output {
+    display: none;
+    width: 30px;
+    align-items:end;
+    justify-content: center;
+    height: 20px;
+    border-radius: 6px 6px 0px 0px;
+    background-color: #4B1635;
+    cursor: context-menu;
+    user-select: none;
+    margin-left: 6px;
+    color: white;
+}
+
 ::-webkit-scrollbar {
     width: 15px;
     background-color: #d3b4c6;
