@@ -41,8 +41,10 @@ function main() {
     run();
     var mypre = document.getElementById("output");
     var opth = document.getElementById("output-head");
+    var clsOpt = document.getElementById("close-output");
     mypre.style.display = 'block';
     opth.style.display = 'flex';
+    clsOpt.style.display = 'flex';
     editor.resize()
 }
 
@@ -65,12 +67,17 @@ function openFile() {
 function toggleConsole() {
     var mypre = document.getElementById("output");
     var opth = document.getElementById("output-head");
+    var clsOpt = document.getElementById("close-output");
+
     if (mypre.style.display !== 'none') {
         mypre.style.display = 'none';
         opth.style.display = 'none';
+        clsOpt.style.display = 'none';
+
     }
     else {
         opth.style.display = 'flex';
+        clsOpt.style.display = 'flex';
         mypre.style.display = 'block';
     }
     editor.resize()
@@ -97,7 +104,7 @@ function reSizeOutput() {
 
             // Function to handle mousemove event
             function handleMouseMove(event) {
-                var newHeight = startHeight + (event.clientY - startY);
+                var newHeight = startHeight - (event.clientY - startY);
                 outputTextarea.style.height = newHeight + 'px';
             }
 
