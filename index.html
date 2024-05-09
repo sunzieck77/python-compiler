@@ -39,7 +39,11 @@
             </div>
         </div>
         <div id="editor"><pre></pre></div>
-        <div class="output-head" id="output-head"> OUTPUT</div>
+        <div style="display: flex;">
+            <div class="output-head" id="output-head"> OUTPUT</div>
+            <a  onclick="toggleConsole()" class="close-output" id="close-output"><i class="ri-close-fill"></i></a>
+        </div>
+
         <textarea id="output"></textarea>
     </div>
     <script src="data/js/script.js" tpye="text/javascript"></script>
