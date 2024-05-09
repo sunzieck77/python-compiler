@@ -81,31 +81,42 @@ body {
 }
 
 .output-head {
-    width: 99%;
+    display: flex;
+    width: 70px;
     color: #fff8fb;
     font-family: 'Source Code Pro', sans-serif;
-    font-weight: 500;
-    align-items: center;
-    display: flex;
-    font-size: 14px;
-    padding-left: 5px;
-    height: 25px;
+    font-weight: 000;
+    letter-spacing: 1px;
+    align-items:end;
+    font-size: 12px;
+    justify-content: center;
+    height: 20px;
+    border-radius: 0px 6px 0px 0px;
     background-color: #4B1635;
     /* resize:vertical; */
     cursor: ns-resize;
     user-select: none;
 }
 
-
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #d3b4c6;
+}
+::-webkit-scrollbar-thumb {
+    width: 15px;
+    background-color: #4B1635;
+    border-radius: 8px;
+}
 #output {
     /* background-color: #1C1C1C; */
     background-color: #FFEFF6;
     color: black;
     /* border: 1px solid black; */
     /* outline: 1px solid black; */
+    outline: none;
     resize: vertical;
     height: 35%;
-    /* border-top: 5px solid black; */
+    border-top: 5px solid #4B1635;
 }
 
 
